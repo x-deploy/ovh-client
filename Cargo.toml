@@ -1,0 +1,16 @@
+[package]
+name = "ovh-client"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11.23", features = ["json"] }
+tokio = { version = "1.35.1", features = ["full"] }
+serde_json = { version = "1.0.111", features = ["raw_value"] }
+dotenv = "0.15.0"
+serde = { version = "1.0.195", features = ["derive"] }
+sha1 = "0.10.6"
+hex = "0.4.3"
+chrono = "0.4.31"
